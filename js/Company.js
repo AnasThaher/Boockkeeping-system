@@ -1,10 +1,15 @@
-class Company {
+export class Company {
   companyId;
   currency;
-  name;
   county;
   businessName;
 
+  constructor(companyId, currency,  county, businessName) {
+    this.companyId = this.setcompanyId(companyId);
+    this.currency = this.setcurrency(currency);
+    this.county = this.setcounty(county);
+    this.businessName = this.setbusinessName(businessName);
+  }
   setcompanyId(id) {
     this.companyId = id;
   }
