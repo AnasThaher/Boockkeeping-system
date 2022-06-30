@@ -2,6 +2,7 @@
 <html>
   <head>
     <link rel="stylesheet" href="css/login.css">
+    <script src="js/login.js"></script>
   </head>
   <body>
     <div class="parent">
@@ -11,12 +12,13 @@
 
       <form action="login.js">
         <label >Email</label>
-        <input type="email" class="inpu" name="Email" placeholder="Your Email.." />
+        <input type="email" class="inpu" name="Email" placeholder="Your Email.." id="email" />
 
         <label >Password</label>
-        <input type="password" class="inpu" name="Passowrd" placeholder="Your Passowrd.." />
+        <input type="password" class="inpu" name="Password" placeholder="Your Password.." id="password" />
+        <button class="submit" type="button"  value="Submit" type="submit" onclick="login()">Submit</button>
 
-        <input class="submit" type="submit" value="Submit" />
+        <!-- <input class="submit" type="submit" value="Submit" /> -->
       </form>
     </div>
 </div>

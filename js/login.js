@@ -8,13 +8,14 @@ let userData={
 let email = document.getElementById('email').value;
 let password = document.getElementById('password').value;
 
-if(email != null &&password != null){
+if(email != '' &&password != ''){
 
 
 
 } else{
 
     console.log("the data is not valid");
+    alert("the data is not valid")
 }
 
 

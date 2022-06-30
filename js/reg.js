@@ -19,7 +19,7 @@ function reg() {
   let na = document.getElementById("name").value;
   let em = document.getElementById("email").value;
   let comn = document.getElementById("companyName").value;
-  let pass = document.getElementById("companyName").value;
+  let pass = document.getElementById("passowrd").value;
 
   let companes = JSON.parse(localStorage.getItem("companes")) || [];
   let users = JSON.parse(localStorage.getItem("users")) || [];
@@ -38,8 +38,12 @@ function reg() {
     let companes = JSON.parse(localStorage.getItem("companes")) || [];
     let users = JSON.parse(localStorage.getItem("users")) || [];
     users.push(newUser);
-    companes.push(newUser);
+    companes.push(newCompany);
     document.getElementById("name").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("companyName").value = "";
+    document.getElementById("passowrd").value = "";
+
     localStorage.setItem("companes", JSON.stringify(companes));
     localStorage.setItem("users", JSON.stringify(users));
 
