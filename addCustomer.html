@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <br>
+        <label for="">Customer Name</label>
+        <input type="text" name="customer name" id="c_name">
+        <br>
+        <br>
+        <label for="">Reciept Amount</label>
+        <input type="text" name="reciept amount" id="reciept amount">
+        <br>
+        <br>
+        <label for="">Reciept Date</label>
+        <input type="text" name="reciept date" id="reciept date">
+        <br>
+        <br>
+        <button type="button" onclick="submitForm()">save</button>
+        <br>
+    </div>
+    <div>
+        <h1>Customers Report</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        Customer Name
+                    </th>
+                    <th>
+                        Reciept Amount
+                    </th>
+                    <th>
+                        Reciept Date
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="customerTable">
+            </tbody>
+        </table>
+    </div>
+    <script src="./addCustomer.js"></script>
+</body>
+
+</html>
