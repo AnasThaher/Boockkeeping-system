@@ -2,42 +2,41 @@
 <html>
   <head>
     <link rel="stylesheet" href="css/reg.css">
-  </head>
+  </head> 
+
+
   <body>
     <div class="parent">
         <img src="img/GettyImages-1129810557_HEADER.jpg" alt="">
     <div class="contener">
-      <form action="reg.js">
-       
-        <label >Amount</label>
-        <input type="number"  class="inpu" name="email" placeholder="Your Email.." />
+      <form action="addPayment.html">
 
-        
+        <label >Amount</label>
+        <input type="number"  class="inpu" name="email" placeholder="Amount.." id="amount"/>
+
+
         <label >Date</label>
-        <input type="number"class="inpu" name="companyName" placeholder="Date.." />
+        <input type="date"class="inpu" name="companyName" placeholder="Date.." id="date"/>
 
         <label >Payee</label>
-        <input type="number" class="inpu" name="paid" placeholder="Your Payee.." />
+        <input type="number" class="inpu" name="paid" placeholder="Your Payee.." id="payee" />
 
 
         <label >User Name</label>
-        <select class="inpu" name="city">
-          <option value="australia">Mira</option>
-          <option value="canada">Ward</option>
-          <option value="usa">Huda</option>
-          <option value="usa">Lama</option>
-          <option value="usa">Deana</option>
-          <option value="usa">Mariah</option>
-
+       
+             <select class="inpu" name="employeeName" id="empName">
+             
+          <option value="Mira" >Mira</option>
         </select>
 
+        <button class="submit" type="button"  value="Submit" type="submit" onclick="addPayment()">Submit</button>
 
-        
-
-
-        <input class="submit" type="submit" value="Submit" />
+        <!-- <input class="submit" type="submit" value="Submit" /> -->
       </form>
     </div>
 </div>
+
+<script src="js/addPayment.js"></script>
+
   </body>
 </html>

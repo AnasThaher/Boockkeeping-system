@@ -7,21 +7,21 @@
     <div class="parent">
         <img src="img/GettyImages-1129810557_HEADER.jpg" alt="">
     <div class="contener">
-      <form action="reg.js">
-       
-        <label >Amount</label>
-        <input type="number"  class="inpu" name="email" placeholder="Your Email.." />
+      <form action="">
 
-        
+        <label >Amount</label>
+        <input type="number"  class="inpu" name="email" placeholder="Amount.." id="amount"/>
+
+
         <label >Date</label>
-        <input type="number"class="inpu" name="companyName" placeholder="Date.." />
+        <input type="date"class="inpu" name="companyName" placeholder="Date.." id="date"/>
 
         <label >Paid</label>
-        <input type="number" class="inpu" name="paid" placeholder="Your Paid.." />
+        <input type="number" class="inpu" name="paid" placeholder="Your Paid.." id="paid" />
 
 
         <label >User Name</label>
-        <select class="inpu" name="city">
+        <select class="inpu" name="city" id="cusName">
           <option value="australia">Mira</option>
           <option value="canada">Ward</option>
           <option value="usa">Huda</option>
@@ -32,12 +32,15 @@
         </select>
 
 
-        
 
 
-        <input class="submit" type="submit" value="Submit" />
+        <button class="submit" type="button"  value="Submit" type="submit" onclick="addReceipt()">Submit</button>
+
+        <!-- <input class="submit" type="submit" value="Submit" /> -->
       </form>
     </div>
 </div>
+<script src="./js/addReceipt.js"></script>
+
   </body>
 </html>
