@@ -202,3 +202,9 @@ body {
   top: 10%;
   left: 7%;
 }
+
+table, th, td {
+  border:1px solid black;
+  background-color: #5b5c5c;
+  
+}
