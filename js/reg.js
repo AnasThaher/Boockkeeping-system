@@ -46,6 +46,7 @@ function reg() {
 
     localStorage.setItem("companes", JSON.stringify(companes));
     localStorage.setItem("users", JSON.stringify(users));
+    window.location.href = "C:/Users/dell/Boockkeeping-system/login.html";
 
     console.log(localStorage.getItem("companes"));
     console.log(localStorage.getItem("users"));
